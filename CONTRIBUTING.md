@@ -34,7 +34,7 @@ Style Guide
 
 All commits to the MongoDB Tools repository must pass golint:
 
-```go run vendor/src/github.com/3rf/mongo-lint/golint/golint.go mongo* bson* common/*```
+```go run vendor/src/github.com/monger/monger-lint/golint/golint.go mongo* bson* common/*```
 
 _We use a modified version of [golint](https://github.com/golang/lint)_
 

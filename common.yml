@@ -1141,7 +1141,7 @@ tasks:
           set -e
           . ./set_goenv.sh
           GOROOT="" set_goenv || exit
-          retVal=$(go run vendor/github.com/3rf/mongo-lint/golint/golint.go mongo* bson* legacy/*);
+          retVal=$(go run vendor/github.com/monger/monger-lint/golint/golint.go mongo* bson* legacy/*);
           if [ "$retVal" = "" ]; then exit 0; else echo $retVal; exit 1; fi;
 
 - name: lint-js
